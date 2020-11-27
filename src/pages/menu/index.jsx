@@ -1,11 +1,6 @@
 import { Route, Switch, useHistory } from "react-router-dom";
-import { Menu, Button } from "antd";
+import { Menu } from "antd";
 import React, { useState, useEffect } from "react";
-import {
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
-  MenuOutlined,
-} from "@ant-design/icons";
 import "antd/dist/antd.css";
 import axios from "axios";
 import RickList from "../../components/rick-list";
@@ -68,10 +63,6 @@ const MainMenu = () => {
   useEffect(() => {
     firstPokeRequest();
   }, []);
-
-  const handleCollapsed = () => {
-    setCollapsed(!collapsed);
-  };
 
   return (
     <>
