@@ -5,10 +5,10 @@ import "./index.css";
 const RickFavList = ({ rickFav, setRickFav }) => {
   return (
     <>
-      <div className="rickHeader">
-        <h3>Personagens favoritos de Rick e Morty</h3>
+      <div className="rickFavHeader">
+        <h3>Favoritos de Rick e Morty</h3>
       </div>
-      <CardsContainer className="rickList">
+      <CardsContainer className="rickFavList">
         {rickFav.map((user, index) => (
           <RickFavCard
             key={index}

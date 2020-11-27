@@ -1,4 +1,4 @@
-.rickHeader {
+.rickFavHeader {
   width: 100%;
   height: 8vh;
   display: flex;
@@ -10,7 +10,7 @@
   background-image: linear-gradient(to right, #44f5e4, #3ed307);
 }
 
-.rickList {
+.rickFavList {
   padding-top: 30px;
   width: 100%;
   height: 100%;

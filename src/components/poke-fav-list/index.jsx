@@ -5,10 +5,10 @@ import "./index.css";
 const PokeFavList = ({ pokeFav, setPokeFav }) => {
   return (
     <>
-      <div className="pokeHeader">
+      <div className="pokeFavHeader">
         <h3>Pokemons favoritos</h3>
       </div>
-      <CardsContainer className="pokeList">
+      <CardsContainer className="pokeFavList">
         {pokeFav.map((user, index) => (
           <PokeFavCard
             key={index}
