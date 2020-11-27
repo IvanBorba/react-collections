@@ -1,0 +1,18 @@
+.rickHeader {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-left: 110px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-image: linear-gradient(to right, #44f5e4, #3ed307);
+}
+
+.rickList {
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #3ed307, #44f5e4);
+}
