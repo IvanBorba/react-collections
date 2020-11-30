@@ -123,7 +123,7 @@ const MainMenu = () => {
             }
             title="Graph"
           >
-            <Menu.Item key="5" onClick={() => history.push("/chart")}>
+            <Menu.Item key="5" onClick={() => history.push("/")}>
               Gráfico
             </Menu.Item>
           </SubMenu>
@@ -153,7 +153,7 @@ const MainMenu = () => {
         <Route>
           <Graph
             exact
-            path="/chart"
+            path="/"
             rickList={rickCharList}
             pokeList={pokeCharList}
           />
