@@ -19,7 +19,7 @@ const Graph = ({ rickList, pokeList }) => {
 
   return (
     <div className="graph">
-      <h2>Relação das listas</h2>
+      <h2 style={{ fontWeight: "bold" }}>Relação das listas</h2>
       <Pie data={data} />
     </div>
   );
