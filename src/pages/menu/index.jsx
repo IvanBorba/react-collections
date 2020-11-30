@@ -159,9 +159,6 @@ const MainMenu = () => {
             pokeList={pokeCharList}
           />
         </Route>
-        <Route>
-          <LandingPage exact path="/" />
-        </Route>
       </Switch>
     </>
   );
