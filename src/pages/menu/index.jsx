@@ -7,7 +7,6 @@ import RickList from "../rick-list";
 import RickFavList from "../rick-fav-list";
 import PokeList from "../poke-list";
 import PokeFavList from "../poke-fav-list";
-import LandingPage from "../landing-page";
 import Graph from "../graph";
 
 const { SubMenu } = Menu;
