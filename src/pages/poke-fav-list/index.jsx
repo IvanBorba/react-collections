@@ -1,21 +1,16 @@
 import { CardsContainer } from "../../globalStyles";
-import PokeFavCard from "../poke-fav-card";
+import FavCard from "../../components/fav-card";
 import "./index.css";
 
-const PokeFavList = ({ pokeFav, setPokeFav }) => {
+const PokeFavList = ({ fav, setFav }) => {
   return (
     <>
       <div className="pokeFavHeader">
         <h3>Pokemons favoritos</h3>
       </div>
       <CardsContainer className="pokeFavList">
-        {pokeFav.map((user, index) => (
-          <PokeFavCard
-            key={index}
-            user={user}
-            pokeFav={pokeFav}
-            setPokeFav={setPokeFav}
-          />
+        {fav.map((user, index) => (
+          <FavCard key={index} user={user} fav={fav} setFav={setFav} />
         ))}
       </CardsContainer>
     </>

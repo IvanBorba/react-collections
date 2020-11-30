@@ -28,10 +28,12 @@ export const Card = styled.div`
     0% {
       opacity: 0;
       margin-right: 500px;
+      margin-top: 500px;
     }
     100% {
       opacity: 1;
       margin-right: 0px;
+      margin-top: 0px;
     }
   }
 `;

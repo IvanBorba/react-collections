@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { CardsContainer } from "../../globalStyles";
-import PokeInfoCard from "../poke-info-card";
+import InfoCard from "../../components/info-card";
 import "./index.css";
 
-const PokeList = ({ pokeCharList, pokeFav, setPokeFav }) => {
+const PokeList = ({ pokeCharList, fav, setFav }) => {
   const [input, setInput] = useState("");
   const [filtered, setFiltered] = useState(false);
 
@@ -31,22 +31,22 @@ const PokeList = ({ pokeCharList, pokeFav, setPokeFav }) => {
               .filter((user) => user.name?.toLowerCase().includes(input))
               .map((user, index) => {
                 return (
-                  <PokeInfoCard
+                  <InfoCard
                     key={index}
                     user={user}
-                    pokeFav={pokeFav}
-                    setPokeFav={setPokeFav}
-                  ></PokeInfoCard>
+                    fav={fav}
+                    setFav={setFav}
+                  ></InfoCard>
                 );
               })
           : pokeCharList.map((user, index) => {
               return (
-                <PokeInfoCard
+                <InfoCard
                   key={index}
                   user={user}
-                  pokeFav={pokeFav}
-                  setPokeFav={setPokeFav}
-                ></PokeInfoCard>
+                  fav={fav}
+                  setFav={setFav}
+                ></InfoCard>
               );
             })}
       </CardsContainer>

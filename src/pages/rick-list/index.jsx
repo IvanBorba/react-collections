@@ -1,9 +1,9 @@
 import { CardsContainer } from "../../globalStyles";
-import RickInfoCard from "../rick-info-card";
+import InfoCard from "../../components/info-card";
 import { useState } from "react";
 import "./index.css";
 
-const RickList = ({ rickCharList, setRickFav, rickFav }) => {
+const RickList = ({ rickCharList, setFav, fav }) => {
   const [input, setInput] = useState("");
   const [filtered, setFiltered] = useState(false);
 
@@ -31,20 +31,10 @@ const RickList = ({ rickCharList, setRickFav, rickFav }) => {
             ? page
                 .filter((actual) => actual.name?.toLowerCase().includes(input))
                 .map((user, index) => (
-                  <RickInfoCard
-                    key={index}
-                    user={user}
-                    setRickFav={setRickFav}
-                    rickFav={rickFav}
-                  />
+                  <InfoCard key={index} user={user} setFav={setFav} fav={fav} />
                 ))
             : page.map((user, index) => (
-                <RickInfoCard
-                  key={index}
-                  user={user}
-                  setRickFav={setRickFav}
-                  rickFav={rickFav}
-                />
+                <InfoCard key={index} user={user} setFav={setFav} fav={fav} />
               ))
         )}
       </CardsContainer>
